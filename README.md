@@ -1,0 +1,2 @@
+# python
+estudar sobre python
