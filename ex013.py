@@ -7,3 +7,6 @@ print(nomes)
 
 nomes[:2] = ['Rubia', 'Keila']
 print(nomes)
+
+nomes.insert(2,'Viviane')
+print(nomes)
