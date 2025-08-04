@@ -19,7 +19,12 @@
 #     print('Sair')
 
 # Avaliação de curto circuito
-print(True and False and True)
-print(True and 0 and True) 
+# print(True and False and True)
+# print(True and 0 and True) 
 
-print(True or False or 0 or 'abc') 
+# print(True or False or 0 or 'abc') 
+
+senha = input('Senha: ')
+
+if not senha:
+    print('Você não digitou nenhuma senha')
