@@ -5,6 +5,8 @@ while True:
     operador = input('Digite o operador (+-/*): ')
 
     numeros_validos = None
+    num_1_float = 0
+    num_2_float = 0
 
     try:
         num_1_float = float(numero_1)
@@ -29,7 +31,21 @@ while True:
 
     ###
 
+    if operador == '+':
+        soma = num_1_float + num_2_float
+        print(soma)
+    elif operador == '-':
+        subtracao = num_1_float - num_2_float
+        print(subtracao)
+    elif operador == '/':
+        divisao = num_1_float / num_2_float
+        print(divisao)
+    elif operador == '*':
+        multiplicacao = num_1_float * num_2_float
+        print(multiplicacao)
+
     sair = input('Quer sair? [s]im: ').lower().startswith('s')
 
     if sair is True:
         break
+print('FIM')
