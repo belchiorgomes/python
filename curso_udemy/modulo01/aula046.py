@@ -1,7 +1,8 @@
 lista = ['Maria', 'Helena', "Luiza"]
+indices = range(len(lista))
 
-for nome in lista:
-    print(nome)
+for indice in indices:
+    print(indice, lista[indice])
 
 # for letra in 'ABC':
 #     print(letra)
