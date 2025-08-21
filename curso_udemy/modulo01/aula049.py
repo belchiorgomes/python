@@ -18,9 +18,12 @@ print(frases_unidas)
 print('---------------------------')
 
 salas = [
-    ['Maria','Eduarda',],
-    ['Henena',],
-    ['Maria Vitoria', 'Priscila', 'Julia',],
+    ['Maria', 'Eduarda', ],
+    ['Henena', ],
+    ['Maria Vitoria', 'Priscila', 'Julia', (0, 10, 20, 30, 40)],
 ]
 
 print(salas)
+print(salas[1])
+print(salas[2][1])
+print(salas[2][3][3])
