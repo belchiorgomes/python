@@ -27,3 +27,13 @@ O primeiro dígito do CPF é 7
 cpf = '746.824.890-70'.replace('.', '')
 indice_cpf = cpf[0:9]
 print(indice_cpf)
+
+contador_regressivo = 10
+resultado = 0
+
+for digito in indice_cpf:
+    resultado += int(digito) * contador_regressivo
+    contador_regressivo -= 1
+digito = (resultado * 10) % 11
+digito = digito if digito <= 9 else 0
+print(digito)
