@@ -19,7 +19,7 @@ print('---------------------------')
 
 salas = [
     ['Maria', 'Eduarda', ],
-    ['Henena', ],
+    ['Helena', ],
     ['Maria Vitoria', 'Priscila', 'Julia', (0, 10, 20, 30, 40)],
 ]
 
@@ -27,3 +27,16 @@ print(salas)
 print(salas[1])
 print(salas[2][1])
 print(salas[2][3][3])
+
+print('--------------------------------------')
+
+salaAlunos = [
+    ['Maria', 'Eduarda', ],
+    ['Helena', ],
+    ['Maria Vitoria', 'Priscila', 'Julia', ],
+]
+
+for sala in salaAlunos:
+    print(f'A sala {sala}')
+    for alunos in sala:
+        print(alunos)
