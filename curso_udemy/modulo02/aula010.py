@@ -38,4 +38,4 @@ print(pessoa['sobrenome'])
 print()
 
 for chave in pessoa:
-    print(chave, pessoa[chave])
+    print(chave, pessoa[chave]) 
