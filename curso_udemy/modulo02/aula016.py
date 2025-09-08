@@ -25,3 +25,27 @@ lista_de_listas_de_inteiros = [
     [5, 3, 1, 8, 5, 7, 1, 8, 8, 7],
     [10, 9, 8, 7, 6, 5, 4, 3, 2, 1],
 ]
+
+def primeiro_duplicado(*args):
+    for indice_lista_grande in args:
+        numeros_repetidos = set()
+
+        for indices in indice_lista_grande:
+            # numeros = set(indices)
+            # if len(numeros) < len(indices):
+            #      print(f'A lista {indices} tem numeros repedidos {numeros} \n')
+
+            # else:
+            #     # print(f'A lista {indices} nao tem numeros repeditos {numeros} \n')
+            #     print(numeros)
+
+            if indices in numeros_repetidos:
+                print(indices)
+
+            numeros_repetidos.add(indices)
+
+        print(indices)
+        print()
+
+
+primeiro_duplicado(lista_de_listas_de_inteiros)
