@@ -26,26 +26,17 @@ lista_de_listas_de_inteiros = [
     [10, 9, 8, 7, 6, 5, 4, 3, 2, 1],
 ]
 
-def primeiro_duplicado(*args):
-    for indice_lista_grande in args:
-        numeros_repetidos = set()
+def encontrar_primeiro_duplicado(lista_pequena):
+    numeros_vistos = set()
+    for numero in lista_pequena:
+        if numero in numeros_vistos:
+            return numero
+        numeros_vistos.add(numero)
+    return None
 
-        for indices in indice_lista_grande:
-            # numeros = set(indices)
-            # if len(numeros) < len(indices):
-            #      print(f'A lista {indices} tem numeros repedidos {numeros} \n')
-
-            # else:
-            #     # print(f'A lista {indices} nao tem numeros repeditos {numeros} \n')
-            #     print(numeros)
-
-            if indices in numeros_repetidos:
-                print(indices)
-
-            numeros_repetidos.add(indices)
-
-        print(indices)
-        print()
-
-
-primeiro_duplicado(lista_de_listas_de_inteiros)
+for lista_pequena in lista_de_listas_de_inteiros:
+    primeiro_duplicado = encontrar_primeiro_duplicado(lista_pequena)
+    if primeiro_duplicado is not None:
+        print(f"Lista: {lista_pequena} -> Primeiro duplicado: {primeiro_duplicado} \n")
+    else:
+        print(f"Lista: {lista_pequena} -> Não há duplicados \n")
