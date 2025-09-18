@@ -14,3 +14,9 @@ lista2 = [
     for y in range(3)
 ]
 print(lista2)
+
+lista3 = [
+    [letra for letra in 'Breno']
+    for x in range(3)
+]
+print(lista3)
