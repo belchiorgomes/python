@@ -1,2 +1,3 @@
-def soma(a, b):
-    return a + b
+a = 18
+# b = 0
+# c = a / b
