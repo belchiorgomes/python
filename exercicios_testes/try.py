@@ -8,14 +8,22 @@ while continuar.lower() != 'nao':
         soma = numero1 + numero2
         print(f'A soma entre {numero1} + {numero2} = {soma} \n')
 
-        continuar = str(input('Digite (SIM) para continuar ou (NÃO) para finalizar o programa '))
+        validacao_resposta = True
+        while validacao_resposta:
+            resosta = str(input('Deseja fazer outra soma (SIM/NÃO) \n'))
 
-        if continuar != 'sim' or continuar != 'nao':
-            print('Você digitou outra coisa sem ser sim ou não')
-            continue
+            if resosta.lower() == 'sim':
+                continuar = 'sim'
+                validacao_resposta = False
+
+            elif resosta.lower() == 'nao':
+                continuar = 'nao'
+                validacao_resposta = False
+
+            else:
+                print('Resposta inválida. digite "sim" ou "nao" \n')
 
     except ValueError:
         print('Digite apenas numero')
-    # except Exception:
-    #     print('Outro erro')
+
 print('Programa encerrado com sucesso.')
