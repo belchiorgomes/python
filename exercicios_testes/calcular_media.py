@@ -5,12 +5,19 @@ while True:
         nota = float(input('Digite uma nota (ou um numero negatiovo para sair) \n'))
 
         
-        if nota < 0:
-            print('Nenhuma nota digitada \n')
-            break
-        else:
+        # if nota < 0:
+        #     print('Nenhuma nota digitada \n')
+        #     break
+        # else:
+        #     soma += nota
+        #     qdt_nota += 1
+
+        if nota >= 0:
             soma += nota
             qdt_nota += 1
+        else:
+            print('Nenhuma nota digitada \n')
+            break
 
         media = soma / qdt_nota
     except ValueError:
